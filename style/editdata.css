@@ -1,0 +1,539 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.header{
+    background-color: #F5F2EA;
+    width: 100%;
+    height: 9vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logo img{
+    margin-left: 128px;
+    height: 78px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #787878;
+    margin-right: 128px;
+
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.managementdata a{
+    font-weight: 700;
+    color: #2F2F2F;
+}
+
+.management-line{
+    border: 2px solid #000000;
+    width: 284px;
+    height: 0px;
+    align-items: center;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.header .menu a:hover{
+    color: #FDC888;
+}
+
+/* Content */
+.content{
+    padding-top: 110px;
+    margin-left: 128px;
+    margin-right: 128px;
+    background-color: #FEFEFE;
+}
+
+.content-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-top-left{
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+}   
+
+#nama{
+    width: 816px;
+    height: 57px;   
+    padding-left: 22px;
+    padding-right: 22px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+    padding-left: 21px;
+}
+
+
+.content-top-right{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.content-top-right p{
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #B4B4B4;
+}
+
+.content-line{
+    margin-top: 24px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #DADADA;
+}
+
+.content-bot{
+    display: flex;
+    width: 100%;
+}
+
+.form-update{
+    display: flex;
+    width: 100%;
+}
+
+.content-bot-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-bot-left img{
+    margin-bottom: 25px;
+    border-radius: 10px;
+
+}
+
+.foto-properti{
+    margin-bottom: 50px;
+}
+
+.content-bot-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 51px;
+}
+
+.detail-title{
+    margin-bottom: 50px;
+}
+
+.detail-title p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #2F2F2F;
+}
+
+.detail-info{
+    display: flex;
+}
+
+.detail-info-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-info-right{
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formlabel{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F2F2F;
+    margin-bottom: 10px;
+}
+
+.forminput{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 21px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+
+    width: 245px;
+    height: 57px;
+
+    margin-bottom: 30px;
+}
+
+.formselect{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 21px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+
+    width: 270px;
+    height: 57px;
+
+    margin-bottom: 30px;
+}
+
+.tinjauan-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tinjauan-title p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #2F2F2F;
+}
+
+.tinjauan-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.tinjauan-info-1{
+    display: flex;
+}
+
+.tinjauan-info-1-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.tinjauan-info-1-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+}
+
+.tinjauan-info-line{
+    width: 1050px;
+    height: 0px; 
+    border: 1px solid #DADADA;
+    margin-bottom: 46px;
+}
+
+.tinjauan-info-2{
+    width: 100%;
+    display: flex;
+}
+
+.tinjauan-info-2-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.tinjauan-info-2-middle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+}
+
+.tinjauan-info-2-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+}
+
+.tinjauan-info-3{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#alamat{
+    width: 750px;
+}
+
+.updatebtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#update{
+    width: 260px;
+    height: 74px;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    text-align: center;
+    
+    background: #FDC888;
+    border-radius: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+/* Footer */
+.footer{
+    display: flex;
+    
+    background-color: #F5F2EA;
+    width: 100%;
+    height: 6vh;
+    
+    margin-top: 40px;
+    bottom: 0;
+}
+
+.footer p{
+    margin-top: 2vh;
+    margin-left: 128px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #6F6F6F;
+}
+
+@media screen and (max-width: 800px) {
+    /* HEADER */
+    .header{
+        background-color: #F5F2EA;
+        width: 100%;
+        height: 9vh;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    
+    .logo img{
+        margin-left: 50px;
+        height: 78px;
+    }
+    
+    .menu{
+        display: flex;
+    }
+    
+    .menu a{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 37px;
+        color: #787878;
+        margin-right: 50px;
+    
+        text-decoration: none;
+        align-items: center;
+    
+    }
+    
+    .managementdata a{
+        font-weight: 700;
+        color: #2F2F2F;
+    }
+    
+    .management-line{
+        border: 2px solid #000000;
+        width: 225px;
+        height: 0px;
+        align-items: center;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .header .menu a:hover{
+        color: #FDC888;
+    }
+
+    /* CONTENT */
+
+    .content{
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: #FEFEFE;
+    }
+
+    .content-top{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-line{
+        margin-bottom: 40px;
+    }
+
+    #nama{
+        width: 400px;
+        height: 57px;   
+        padding-left: 22px;
+        padding-right: 22px;
+    
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        border-radius: 10px;
+    
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        padding-left: 21px;
+    }
+    
+
+    .content-bot-left img{
+        width: 100%;
+    }
+
+    .form-update{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .detail-info-right{
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-bot-right{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 51px;
+    }
+
+    .tinjauan-info-1-right{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+    }
+
+    .tinjauan-info-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tinjauan-info-2-middle{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    
+    .tinjauan-info-2-right{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    
+    #kamartidur{
+        width: 550px;
+    }
+
+    #kamarmandi{
+        width: 550px;
+    }
+    
+    #unit{
+        width: 550px;
+    }
+
+    #alamat{
+        width: 550px;
+    }
+
+    .updatebtn{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    /* Footer */
+    .footer{
+        display: flex;
+            
+        background-color: #F5F2EA;
+        width: 100%;
+        height: 6vh;
+    
+        bottom: 0;
+    }
+    
+    .footer p{
+        margin-top: 2vh;
+        margin-left: 40px;
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    
+        color: #6F6F6F;
+    }    
+}

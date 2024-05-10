@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propertyopolis - View Data</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/editdata.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../Assets/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <a href="../html/home.html">Home</a>
+
+            <div class="managementdata">
+                <a href="../html/management-data.html">Management Data</a>
+                <div class="management-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <form action="../script/editdata.js" id="createform" method="POST">
+            <div class="content-top">
+                <div class="content-top-left">
+                    <a href="../html/management-data.html"><img src="../Assets/back.png" alt="" width="12px"></a>
+                    <input type="text" id="nama" value="Gallery West Residence">
+                </div>
+    
+                <div class="content-top-right">
+                    <p>unsaved changes</p>
+                </div>
+            </div>
+    
+            <div class="content-line"></div>
+    
+            <div class="content-bot">
+                <div class="form-update">
+                    <div class="content-bot-left">
+                        <div class="foto-properti">
+                            <div class="display-image1">
+                                <img src="../Assets/gallerywest.jpg" alt="" width="550px" height="367px">
+                            </div>
+                        </div>
+        
+                        <div class="foto-denah">
+                            <div class="display-image2">
+                                <img src="../Assets/gallerywest-denah.jpg" alt="" width="550px" height="389px">
+                            </div>
+                        </div>
+    
+                    </div>
+        
+                    <div class="content-bot-right">
+                        <div class="content-bot-right-detail">
+                            <div class="detail-title">
+                                <p>DETAIL</p>
+                            </div>
+        
+                            <div class="detail-info">
+                                <div class="detail-info-left">
+                                    <label for="tipe-properti" class="formlabel">Tipe Properti</label>
+                                    <select name="tipe-properti" id="tipe-properti" class="formselect">
+                                        <option value="Rumah Dijual">Rumah Dijual</option>
+                                        <option value="Apartemen Dijual" selected>Apartemen Dijual</option>
+                                    </select>
+    
+                                    <label for="sertifikat" class="formlabel">Sertifikat</label>
+                                    <select name="sertifikat" id="sertifikat" class="formselect">
+                                        <option value="SHGB - Hak Guna Bangunan">SHGB - Hak Guna Bangunan</option>
+                                        <option value="Strata">Strata</option>
+                                        <option value="SHM - Sertifikat Hak Milik">SHM - Sertifikat Hak Milik</option>
+                                        <option value="Sertifikat Belum Pecah" selected>Sertifikat Belum Pecah</option>
+                                    </select>
+    
+                                    <label for="idlist" class="formlabel">ID Listing</label>
+                                    <input type="number" name="idlist" id="idlist" class="forminput" placeholder="No ID Listing"  value="19535382">
+                                </div>
+        
+                                <div class="detail-info-right">
+                                    <label for="developer" class="formlabel">Developer</label>
+                                    <input type="text" name="developer" id="developer" class="forminput" placeholder="Nama Developer" value="PT AKR Land Development">
+    
+                                    <label for="tahun-dibuat" class="formlabel">Tahun dibuat</label>
+                                    <select name="tahun-dibuat" id="tahun-dibuat" class="formselect">
+                                        <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018" selected>2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                    </select>
+                                  
+                                    <label for="listrik" class="formlabel">Listrik</label>
+                                    <select name="listrik" id="listrik" class="formselect">
+                                        <option value="N/A" selected>N/A</option>
+                                        <option value="Available">Available</option>
+                                    </select>
+    
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="content-bot-right-tinjauan">
+                            <div class="tinjauan-title">
+                                <p>TINJAUAN UMUM</p>
+                            </div>
+        
+                            <div class="tinjauan-info">
+                                <div class="tinjauan-info-1">
+                                    <div class="tinjauan-info-1-left">
+                                        <label for="mulaidari" class="formlabel">Mulai dari</label>
+                                        <input type="text" name="mulaidari" id="mulaidari" class="forminput" placeholder="Harga" value="IDR 1,2 M">
+                                    </div>
+        
+                                    <div class="tinjauan-info-1-right">
+                                        <label for="perkiraanbayar" class="formlabel">Perkiraan Pembayaran Bulanan</label>
+                                        <input type="text" name="perkiraanbayar" id="perkiraanbayar" class="forminput" placeholder="Harga / bulan" value="IDR 5,94 Jt / bulan">
+                                    </div>
+                                </div>
+        
+                                <div class="tinjauan-info-line"></div>
+        
+                                <div class="tinjauan-info-2">
+                                    <div class="tinjauan-info-2-left">
+                                        <label for="kamartidur" class="formlabel">Kamar Tidur</label>
+                                        <input type="text" name="kamartidur" id="kamartidur" class="forminput" placeholder="Jumlah" value="1, 2, 3">
+                                    </div>
+        
+                                    <div class="tinjauan-info-2-middle">
+                                        <label for="kamarmandi" class="formlabel">Kamar Mandi</label>
+                                        <input type="text" name="kamarmandi" id="kamarmandi" class="forminput" placeholder="Jumlah" value="1, 2">
+                                    </div>
+        
+                                    <div class="tinjauan-info-2-right">
+                                        <label for="unit" class="formlabel">Unit</label>
+                                        <input type="text" name="unit" id="unit" class="forminput" placeholder="Ukuran unit" value="5 m² - 7 m²">
+                                    </div>
+                                </div>
+        
+                                <div class="tinjauan-info-3">
+                                    <label for="alamat" class="formlabel">Lokasi</label>
+                                    <input type="text" name="alamat" id="alamat" class="forminput" placeholder="Alamat" value="5 Jl. Panjang, Kebon Jeruk, Jakarta Barat, DKI Jakarta">
+                                </div>
+                                
+                                <div class="updatebtn">
+                                    <input type="submit" value="Update" id="update">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Copyright @Propertyopolis 2022  | Nuki Venoza-2440027026 | UAS Web Based Application Development</p>
+    </div>
+</body>
+<script src="../script/editdata.js"></script>
+</html>

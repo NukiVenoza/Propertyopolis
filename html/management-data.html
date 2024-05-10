@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propertyopolis - Management Data</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/management-data.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../Assets/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <a href="../html/home.html">Home</a>
+
+            <div class="managementdata">
+                <a href="../html/management-data.html">Management Data</a>
+                <div class="management-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-top">
+            <div class="content-top-left">
+                <p>Manajemen Properti</p>
+            </div>
+            <div class="content-top-right">
+                <button><a href="../html/createdata.html">+ Tambah Listing Baru</a></button>
+                <input type="text" id="search" placeholder="Search..." onkeyup="tableSearch()">
+            </div>
+        </div>
+
+        <div class="content-top-line"></div>
+        
+        <div class="content-bot">
+            <table id="properti-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortKolomTableAngka(0)">
+                            <div class="theader" id="number">
+                                <p>No</p>
+                                <img src="../Assets/sort.png" alt="" width="14px">
+                            </div>
+                        </th>
+
+                        <th onclick="sortKolomTable(1)">
+                            <div class="theader" id="nama-properti">
+                                <p>Nama Properti</p>
+                                <img src="../Assets/sort.png" alt="" width="14px">
+                            </div>
+                        </th>
+
+                        <th onclick="sortKolomTableAngka(2)">
+                            <div class="theader" id="jumlah-properti">
+                                <p>Jumlah Unit</p>
+                                <img src="../Assets/sort.png" alt="" width="14px">
+                            </div>
+                        </th>
+
+                        <th onclick="sortKolomTable(3)">
+                            <div class="theader" id="dibuat-oleh">
+                                <p>Dibuat Oleh</p>
+                                <img src="../Assets/sort.png" alt="" width="14px">
+                            </div>
+                        </th>
+
+                        <th onclick="sortKolomTable(4)">
+                            <div class="theader" id="tanggal">
+                                <p>Tanggal</p>
+                                <img src="../Assets/sort.png" alt="" width="14px">
+                            </div>
+                        </th>
+
+                        <th>
+                            <div class="theader" id="action">
+                                <p>Action</p>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            1
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/sapporo-home.png" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">Sapporo Residences at PIK2</p>
+                                    <p id="alamat">Jl Yos Sudarso, Pasir Putih, Dadap, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>78 views</p>
+                                        </div>
+                                        <div class="offers"><p>3 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            2
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">Agung Sedayu 
+Group</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">06-05-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/sapporo.html">View</a></button>
+                                <button><a href="../html/sapporo-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            2
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/goldcoast-home.png" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">Gold Coast Sea View Apartment & Office</p>
+                                    <p id="alamat">Pantai Indah Kapuk, Penjaringan, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>65 views</p>
+                                        </div>
+                                        <div class="offers"><p>5 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            11
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">Agung Sedayu 
+Group</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">06-11-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/gold-coast.html">View</a></button>
+                                <button><a href="../html/gold-coast-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            3
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/littletokyo.jpg" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">LITTLE TOKYO JABABEKA</p>
+                                    <p id="alamat">1 H. USMAR ISMAIL, Cikarang, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>44 views</p>
+                                        </div>
+                                        <div class="offers"><p>1 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            3
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">PP Property</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">07-10-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/littletokyo.html">View</a></button>
+                                <button><a href="../html/littletokyo-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            4
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/citralandcibubur.jpg" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">CitraLand Cibubur</p>
+                                    <p id="alamat">99 Jl Raya Cileungsi, Cileungsi, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>19 views</p>
+                                        </div>
+                                        <div class="offers"><p>2 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            11
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">CitraLand
+Cibubur</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">07-07-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/citraland-cibubur.html">View</a></button>
+                                <button><a href="../html/citraland-cibubur-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            5
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/Pantai-Bukit-Villa.jpg" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">Pantai Bukit Villa - Bukit Nirmala</p>
+                                    <p id="alamat">1 Jl. Marina Raya Jl. Pantai Indah Kapuk, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>55 views</p>
+                                        </div>
+                                        <div class="offers"><p>5 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            9
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">Agung Sedayu 
+Group</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">03-22-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/pantaibukit.html">View</a></button>
+                                <button><a href="../html/pantaibukit-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            6
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/daisan.jpg" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">Daisan</p>
+                                    <p id="alamat">Jalan Suvarna Sutera Boulevard No.19, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>15 views</p>
+                                        </div>
+                                        <div class="offers"><p>1 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            7
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">SwanCity</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">02-16-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/daisan.html">View</a></button>
+                                <button><a href="../html/daisan-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            7
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/theawani.jpg" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">The Awani Residence 3</p>
+                                    <p id="alamat">55 Jalan Cangkorah, Gunung Batu, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>51 views</p>
+                                        </div>
+                                        <div class="offers"><p>6 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            4
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">PT Awani 
+Bandung Realty</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">04-07-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/awani.html">View</a></button>
+                                <button><a href="../html/awani-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            8
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/citraindah.jpg" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">CitraIndah City Jonggol</p>
+                                    <p id="alamat">Jalan Raya Cileungsi-Jonggol KM 23,3, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>87 views</p>
+                                        </div>
+                                        <div class="offers"><p>7 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            1
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">PT Ciputra Indah</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">01-17-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/citraindah.html">View</a></button>
+                                <button><a href="../html/citraindah-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            9
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/nuansaa.jpg" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">Nuansa Pondok Kelapa</p>
+                                    <p id="alamat">Jl. H. Naman, Pondok Kelapa, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>84 views</p>
+                                        </div>
+                                        <div class="offers"><p>9 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            8
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">KSO SARANA 
+TOTALINDO</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">02-25-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/nuansa.html">View</a></button>
+                                <button><a href="../html/nuansa-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="property-card">
+                        <td class="tabledata" id="number-data">
+                            10
+                        </td>
+                        
+                        <td>
+                            <div class="nama-properti">
+                                <img src="../Assets/gallerywest.jpg" alt="" srcset="" width="101px" height="100.62px" id="property-img">
+                                
+                                <div class="nama-properti-info">
+                                    <p id="nama-title">Gallery West Residence</p>
+                                    <p id="alamat">5 Jl. Panjang, Kebon Jeruk, ...</p>
+                                    <div class="views-offers">
+                                        <div class="views">
+                                            <img src="../Assets/views.png" alt="" width="16.11px" height="7.12px">
+                                            <p>35 views</p>
+                                        </div>
+                                        <div class="offers"><p>10 new offers</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="tabledata" id="unit">
+                            15
+                        </td>
+
+                        <td>
+                            <pre class="tabledata">PT AKR 
+Land Development</pre>
+                        </td>
+
+                        <td>
+                            <p class="tabledata">04-13-2022</p>
+                        </td>
+
+                        <td>
+                            <div class="action-btn">
+                                <button><a href="../html/gallerywest.html">View</a></button>
+                                <button><a href="../html/gallerywest-edit.html">Edit</a></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Copyright @Propertyopolis 2022  | Nuki Venoza-2440027026 | UAS Web Based Application Development</p>
+    </div>
+</body>
+<script src="../script/management-data.js"></script>
+</html>

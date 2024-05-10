@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propertyopolis - Register</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-card">
+            <img src="../Assets/logo.png" alt="" srcset="" height="125px" id="logo">
+            <div class="title">Register</div>
+
+            <form method="POST" action="../script/register.js" id="register-form">
+                <div class="form-content">
+                    <input type="text" name="nama" id="nama" class="forminput" placeholder="Nama lengkap">
+                    <input type="text" name="alamat" id="alamat" class="forminput" placeholder="Alamat">
+                    <input type="text" name="tgl-lahir" id="tgl-lahir" class="forminput" placeholder="Tanggal lahir" onfocus="(this.type='date')">
+                    <input type="email" name="email" id="email" class="forminput" placeholder="Email">
+                    <input type="password" name="password" id="password" class="forminput" placeholder="Password">
+                    <input type="number" name="phone" id="phone" class="forminput" placeholder="Nomor telepon">
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Sign Up" id="sign-up" class="sign-up">
+                </div>
+            </form>
+
+            <div class="login">
+                <p>Already have an account?</p>
+                <button><a href="../html/login.html">Login Now</a></button>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @Propertyopolis 2022  | Nuki Venoza-2440027026</p>
+        </div>
+    </div>
+</body>
+<script src="../script/register.js"></script>
+</html>

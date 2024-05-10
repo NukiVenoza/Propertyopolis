@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body{
+    background-color: #F5F2EA;
+}
+
+.container{
+    position: relative;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-card{
+    position: relative;
+    width: 678px;
+    height: 830px;
+    background-color: #FEFEFE;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;    
+}
+
+#logo{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title{
+    position: absolute;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forminput{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+}
+
+#nama{
+    position: absolute;
+    width: 448px;
+    height: 57px;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#alamat{
+    position: absolute;
+    width: 448px;
+    height: 57px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tgl-lahir{
+    position: absolute;
+    width: 448px;
+    height: 57px;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#email{
+    position: absolute;
+    width: 448px;
+    height: 57px;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#password{
+    position: absolute;
+    width: 448px;
+    height: 57px;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#phone{
+    position: absolute;
+    width: 448px;
+    height: 57px;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::placeholder{
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.sign-up{
+    position: absolute;
+    background: #FDC888;
+    border-radius: 10px;
+    width: 490px;
+    height: 65px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: black;
+
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login{
+    display: flex;
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 383px;
+}
+
+.login p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #2F2F2F;
+}
+
+.login button{
+    color: #2F2F2F;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    text-align: center;
+
+    background-color: #FFFFFF;
+    margin-left: 5px;
+}
+
+.login button a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #2F2F2F;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    text-align: center;
+
+    background-color: #FFFFFF;
+    margin-left: 5px;
+}
+
+.copyright{
+    position: absolute;
+    width: 610px;
+
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin-bottom: 20px;
+}
+
+.copyright p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #6F6F6F;
+}
+
+@media screen and (max-width: 800px) {
+    .register-card{
+        width: 508px;
+        height: 722px;
+    }
+    
+    #logo{
+        height: 100px;
+    }
+
+    #nama{
+        width: 358px;
+        height: 57px;
+    }
+
+    #alamat{
+        width: 358px;
+        height: 57px;
+    }
+
+    #tgl-lahir{
+        width: 358px;
+        height: 57px;
+    }
+
+    #email{
+        width: 358px;
+        height: 57px;
+    }
+
+    #password{
+        width: 358px;
+        height: 57px;
+    }
+
+    #phone{
+        width: 358px;
+        height: 57px;
+    }
+
+    #sign-up{
+        width: 400px;
+        height: 57px;
+    }
+}
